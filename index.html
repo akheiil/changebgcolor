@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Changer</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Click a Button to Change Background Color</h1>
+        <div class="row justify-content-center">
+            <!-- Buttons with different colors -->
+            <div class="col-6 col-sm-3 mb-3">
+                <button class="btn btn-danger btn-block" onclick="changeBackgroundColor('red')">Red</button>
+            </div>
+            <div class="col-6 col-sm-3 mb-3">
+                <button class="btn btn-success btn-block" onclick="changeBackgroundColor('green')">Green</button>
+            </div>
+            <div class="col-6 col-sm-3 mb-3">
+                <button class="btn btn-primary btn-block" onclick="changeBackgroundColor('blue')">Blue</button>
+            </div>
+            <div class="col-6 col-sm-3 mb-3">
+                <button class="btn btn-warning btn-block" onclick="changeBackgroundColor('yellow')">Yellow</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
